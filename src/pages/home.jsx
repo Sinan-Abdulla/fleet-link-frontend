@@ -33,15 +33,15 @@ function Home() {
                     Logistics Vehicle Booking System
                 </h1>
 
-                <div className="space-x-4">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                     <Link to="/AddVehicle">
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded shadow">
+                        <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded shadow w-full sm:w-auto">
                             Add Vehicle
                         </button>
                     </Link>
 
                     <Link to="/search&Book">
-                        <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded shadow">
+                        <button className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded shadow w-full sm:w-auto">
                             Search & Book Vehicle
                         </button>
                     </Link>
