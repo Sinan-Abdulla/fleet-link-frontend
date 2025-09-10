@@ -20,7 +20,7 @@ function SearchAndBook() {
     const handleSearch = async () => {
         try {
             const formattedStartTime = formatStartTime(startTime);
-            const res = await axios.get('http://localhost:9000/api/vehicles/available', {
+            const res = await axios.get('http://3.106.114.241:9000/api/vehicles/available', {
                 params: {
                     capacityRequired,
                     fromPincode,
@@ -39,7 +39,7 @@ function SearchAndBook() {
     const handleBook = async (vehicleId) => {
         try {
             const formattedStartTime = formatStartTime(startTime);
-            await axios.post('http://localhost:9000/api/bookings', {
+            await axios.post('http://3.106.114.241:9000/api/bookings', {
                 vehicleId,
                 fromPincode,
                 toPincode,
