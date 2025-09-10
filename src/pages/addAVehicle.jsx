@@ -15,11 +15,12 @@ function AddVehicle() {
       return;
     }
     try {
-      await axios.post('http://localhost:9000/api/vehicles', {
+      await axios.post('http://3.106.114.241:9000/api/vehicles', {
         name,
         capacityKg: capacity,
         tyres
       });
+      
       alert('Vehicle added successfully');
       setName('');
       setCapacity('');
