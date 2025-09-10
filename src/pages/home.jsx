@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-// Simple Navbar Component
 
 function Navbar() {
     return (
@@ -14,7 +13,6 @@ function Navbar() {
     );
 }
 
-// Simple Footer Component
 function Footer() {
     return (
         <footer className="bg-gray-800 text-white text-center py-4 mt-12">

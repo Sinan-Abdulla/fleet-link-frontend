@@ -28,7 +28,7 @@ function SearchAndBook() {
                     startTime: formattedStartTime
                 }
             });
-            console.log('Fetched Vehicles:', res.data); // Debug log
+            console.log('Fetched Vehicles:', res.data);
             setVehicles(res.data);
         } catch (err) {
             console.error('Error fetching vehicles:', err);
